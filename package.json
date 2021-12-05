@@ -49,7 +49,7 @@
 		]
 	},
 	"lint-staged": {
-		"src/**/*.{js,jsx,ts,tsx}": [
+		"src/**/*.+(js,ts,tsx)": [
 			"eslint . --ext ts --ext tsx --ext js",
 			"prettier --write ."
 		]
