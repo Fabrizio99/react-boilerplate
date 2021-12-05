@@ -50,8 +50,8 @@
 	},
 	"lint-staged": {
 		"src/**/*.+(js,ts,tsx)": [
-			"eslint . --ext ts --ext tsx --ext js",
-			"prettier --write ."
+			"npx eslint . --ext ts --ext tsx --ext js",
+			"npx prettier --write ."
 		]
 	},
 	"husky": {
