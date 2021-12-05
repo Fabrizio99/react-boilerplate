@@ -63,7 +63,9 @@
 		"prettier": "2.5.0"
 	},
 	"lint-staged": {
-		"*.js": "eslint --cache --fix",
-		"*.{js,css,md}": "prettier --write"
+		"src/**/*.+(js,ts,tsx)": [
+			"npx eslint . --ext ts --ext tsx --ext js",
+			"npx prettier --write ."
+		]
 	}
 }
