@@ -63,7 +63,7 @@
 		"prettier": "2.5.0"
 	},
 	"lint-staged": {
-		"*.+(js,ts,tsx)": [
+		"src/**/*.+(js,ts,tsx)": [
 			"npx eslint . --ext ts --ext tsx --ext js",
 			"npx prettier --write ."
 		]

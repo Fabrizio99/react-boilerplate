@@ -4,7 +4,7 @@ import logo from './logo.svg'
 
 const App = () => {
 	console.log("Rendering App")
-	
+	console.log("abccccc")
 	return (
 		<div className='App'>
 			<header className='App-header'>
