@@ -4,8 +4,7 @@
 		"es2021": true,
 		"jest": true
 	},
-	"extends": ["plugin:react/recommended", "airbnb",
-		"airbnb/hooks", "prettier"],
+	"extends": ["plugin:react/recommended", "airbnb", "airbnb/hooks", "prettier"],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"ecmaFeatures": {
@@ -40,16 +39,8 @@
 	"settings": {
 		"import/resolver": {
 			"node": {
-				"extensions": [
-					".js",
-					".jsx",
-					".ts",
-					".tsx"
-				],
-				"moduleDirectory": [
-					"node_modules",
-					"src/"
-				]
+				"extensions": [".js", ".jsx", ".ts", ".tsx"],
+				"moduleDirectory": ["node_modules", "src/"]
 			}
 		}
 	}
