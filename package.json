@@ -73,6 +73,6 @@
 			"eslint . --ext ts --ext tsx --ext js",
 			"prettier --write ."
 		],
-		"*.{scss}": "npx stylelint \"**/*.scss\" --fix"
+		"*.scss": "npx stylelint \"**/*.scss\" --fix"
 	}
 }
