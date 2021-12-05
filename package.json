@@ -20,6 +20,7 @@
 		"react-hook-form": "^7.20.5",
 		"react-router-dom": "^6.0.2",
 		"react-scripts": "4.0.3",
+		"stylelint-config-standard": "^24.0.0",
 		"typescript": "^4.5.2",
 		"web-vitals": "^1.1.2"
 	},
@@ -51,7 +52,7 @@
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.5.0",
 		"@typescript-eslint/parser": "^5.5.0",
-		"eslint": "^8.4.0",
+		"eslint": "^7.11.0",
 		"eslint-config-airbnb": "^19.0.2",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-import": "^2.25.3",
@@ -60,12 +61,18 @@
 		"eslint-plugin-react-hooks": "^4.3.0",
 		"husky": "^7.0.4",
 		"lint-staged": "^12.1.2",
-		"prettier": "2.5.0"
+		"postcss-scss": "^4.0.2",
+		"prettier": "2.5.0",
+		"stylelint": "^14.1.0",
+		"stylelint-config-prettier": "^9.0.3",
+		"stylelint-prettier": "^2.0.0",
+		"stylelint-scss": "^4.0.0"
 	},
 	"lint-staged": {
 		"*.{js,ts,tsx}": [
 			"eslint . --ext ts --ext tsx --ext js",
 			"prettier --write ."
-		]
+		],
+		"*.scss": "npx stylelint \"**/*.scss\" --fix"
 	}
 }
