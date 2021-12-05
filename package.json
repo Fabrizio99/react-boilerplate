@@ -48,16 +48,16 @@
 			"last 1 safari version"
 		]
 	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
 	"lint-staged": {
 		"src/**/*.+(js,ts,tsx)": [
 			"npx eslint . --ext ts --ext tsx --ext js",
 			"npx prettier --write ."
 		]
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.5.0",
