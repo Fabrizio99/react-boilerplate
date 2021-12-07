@@ -1,8 +1,11 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import AppRouter from './router'
 
-const App = () => {
-	console.log(process.env.REACT_APP_API)
-	return <div>React Boilerplate</div>
-}
+const App = () => (
+	<BrowserRouter>
+		<AppRouter />
+	</BrowserRouter>
+)
 
 export default App
