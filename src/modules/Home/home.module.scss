@@ -1,12 +1,12 @@
 .container {
-	background-color: red;
+	background-color: white;
 
 	&__title {
-		color: blue;
+		color: rgb(71, 71, 71);
 	}
 
 	.text {
-		color: green;
+		color: grey;
 	}
 
 	.text.underline {
