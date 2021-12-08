@@ -1,0 +1,15 @@
+.container {
+	background-color: red;
+
+	&__title {
+		color: blue;
+	}
+
+	.text {
+		color: green;
+	}
+
+	.text.underline {
+		text-decoration: underline;
+	}
+}
