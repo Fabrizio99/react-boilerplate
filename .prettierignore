@@ -1,0 +1,4 @@
+public
+package-lock.json
+vite.config.ts
+src/vite-env.d.ts

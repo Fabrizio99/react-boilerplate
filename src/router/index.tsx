@@ -1,14 +1,33 @@
-import React from 'react'
-import Auth from 'modules/auth'
-import Home from 'modules/Home'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 
-const AppRouter = () => (
-	<Routes>
-		<Route path='/' element={<Home />} />
-		<Route path='auth' element={<Auth />} />
-		<Route path='/*' element={<Navigate replace to='/' />} />
-	</Routes>
-)
+import PATHS from '@/config/paths'
 
-export default AppRouter
+import Home from '@/home/components/pages'
+
+import Public from './public'
+
+const router = createBrowserRouter([
+	{
+		path: PATHS.BASE,
+		children: [
+			{
+				path: PATHS.BASE,
+				element: <Public />,
+				children: [
+					{
+						path: PATHS.HOME,
+						element: <Home />,
+					},
+				],
+			},
+		],
+	},
+	{
+		path: '/*',
+		element: <Navigate to={PATHS.HOME} replace />,
+	},
+])
+
+const Router = () => <RouterProvider router={router} />
+
+export default Router
