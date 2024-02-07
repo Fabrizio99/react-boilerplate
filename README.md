@@ -10,6 +10,7 @@ Testing is configured using Vitest and Testing Library
 - Vitest
 - Classname
 - Redux Toolkit
+- SCSS
 
 
 ## Tools
